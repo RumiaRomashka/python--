@@ -1,12 +1,11 @@
-# ВВести три траты: еда, транспорт, развлечения.
-# Вывести общую сумму и среднеее.
+# Создать список из трат на неделю (7 чисел)
+# Посчитать сумму, среднее, минимум и максимум
+# Сохранить в кортеже (минимум, максимум, сумма) и вывести его
 
-food = input("Затраты на еду: ")
-transport = input("Затраты на транспорт: ")
-entertainment = input("Затраты на развлечения: ")
-budget = int(food.strip()) + int(transport.strip()) + \
-    int(entertainment.strip())
-srednee = int(budget / 3)
-
-print("Общие затраты: ", budget, "руб.")
-print("Средние затраты: ", srednee, "руб.")
+cost = [340, 560, 2890, 569, 3100, 5100, 677]
+sum_cost = sum(cost)
+min_cost = min(cost)
+max_cost = max(cost)
+sr_cost = sum_cost / len(cost)
+tuple_cost = (min_cost, max_cost, sum_cost)
+print(tuple_cost)
